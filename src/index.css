@@ -1,0 +1,107 @@
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  width: 100vw;
+  height: 80px;
+  background: #f2f2f2;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  background-color: white;
+}
+.left span {
+  margin-right: 30px;
+}
+.right button {
+  margin-right: 93px;
+}
+.login {
+  color: rgb(93, 99, 223);
+  border: 1px solid rgb(93, 99, 223);
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  margin-left: -30px;
+}
+.signup {
+  color: white;
+  background-color: rgb(93, 99, 223);
+  border: none;
+  border-radius: 5px;
+  padding: 6px;
+  cursor: pointer;
+  margin-left: -72px;
+}
+.home {
+  margin-top: 70px;
+}
+.search {
+  box-shadow: rgb(0 0 0 / 15%) -0.05px 1.95px 19.6px;
+    position: relative;
+    top: 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 35px 10px 31px;
+}
+.fav {
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 11vw;
+  margin-bottom: 50px;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+}
+.bg{
+  background: #f2f2f2;
+}
+.section {
+  margin-top: 80px;
+}
+.mb-8{
+  border-top-left-radius: 70px;
+}
+.mb-20{
+  margin-top: 8rem;
+  background: #eff1ef8a;
+}
+.logo{
+  height: 65px;
+  width: 227px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-primary bg-gray-200;
+  }
+  .dropdown {
+    @apply w-full lg:max-w-[296px] cursor-pointer;
+  }
+  .dropdown-btn {
+    @apply flex h-[64px] items-center px-[18px] border rounded-lg;
+  }
+  .dropdown-icon-primary {
+    @apply text-2xl mr-[18px] text-violet-700;
+  }
+  .dropdown-icon-secondary {
+    @apply text-2xl text-violet-700 ml-auto;
+  }
+  .dropdown-menu {
+    @apply px-6 py-8 text-[15px] space-y-6 shadow-md bg-white absolute w-full z-10 list-none rounded-b-lg;
+  }
+}
